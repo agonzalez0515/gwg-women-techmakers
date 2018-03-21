@@ -57,9 +57,9 @@ class App extends Component {
   }
 */
 
-/* The original css style names "App container", "row", "column column-75", "column column-25" */
+
   render() {
-    //  <Sidebar places={this.state.places}/>
+    
     return (
 
       <div className="fullContainer">
