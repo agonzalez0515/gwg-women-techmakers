@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import MapContainer from './components/InitialMap';
 import HeaderContainer from './components/Header'
+import StaticMap from './components/StaticMap'
 //import Sidebar from './components/Sidebar';
 import Search from './components/Search'
 // import getPlaces from './services/googlePlaces';
 import Container from './components/Places'
-import 'milligram';
+
 
 class App extends Component {
   constructor(props) {
@@ -56,8 +57,7 @@ class App extends Component {
     })
   }
 */
-
-
+  
   render() {
     
     return (
@@ -68,23 +68,25 @@ class App extends Component {
               <div className="searchContainer">
               <Search submit={this.handleSubmit} input={this.handleChange} />
               </div>
+              <StaticMap className="staticMap" pos={this.state.pos} />
               <div className="mapContainer">
-                    <div className="map">
-                    <MapContainer pos={this.state.pos} searchTerm={this.state.searchTerm} {...this.state} onLoad={this.handleLoad} />
-                    </div>
-                    <div className="mapDescription">
-                    The Description
-                    </div>
-                    <div className="mapPlaces">
-                    <Container {...this.state} />
-                    </div>
+                <div className="map">
+                  <MapContainer pos={this.state.pos} searchTerm={this.state.searchTerm} {...this.state} onLoad={this.handleLoad} />
+                </div>
+                <div className="mapDescription">
+                  The Description
+                </div>
+                <div className="mapPlaces">
+                  <Container {...this.state} />
+                </div>
                </div>
            </div>
            <div className="footer"> footer </div>
-
       </div>
     );
   }
+
+
 }
 
 export default App;
