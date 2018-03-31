@@ -1,4 +1,4 @@
-CACHE_NAME = "mappa-v1"
+CACHE_NAME = "mappa-v2"
 
 const urlsToCache =[
   '/',
