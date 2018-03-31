@@ -35,6 +35,7 @@ self.addEventListener('fetch', function (event) {
   const requestUrl = new URL(event.request.url)
   
   if (requestUrl.pathname.startsWith('/maps/api/staticmap')) {
+    console.log("caching static map")
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match(event.request).then(function(response) {
