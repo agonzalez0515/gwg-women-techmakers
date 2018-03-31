@@ -31,7 +31,7 @@ const isLocalhost = Boolean(
       }
   
       window.addEventListener('load', () => {
-        const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+        const swUrl = `https://mappa-gwg.herokuapp.com/service-worker.js`;
   
         if (isLocalhost) {
           // This is running on localhost. Lets check if a service worker still exists or not.
