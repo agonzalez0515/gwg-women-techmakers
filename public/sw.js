@@ -1,13 +1,13 @@
 // Set this to true for production
 const doCache = false;
 
-const CACHE_NAME = 'maapa-cache-v7';
+const CACHE_NAME = 'maapa-cache-v8';
 
 const urlsToCache =[
   '/',
   '/static/js/',
-  '/static/css',
-  '/index.html',
+  '../src/css/index.cssg',
+  './index.html',
 ];
 
 
