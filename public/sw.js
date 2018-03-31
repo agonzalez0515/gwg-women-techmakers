@@ -13,26 +13,27 @@ const urlsToCache =[
 
 // The first time the user starts up the app, 'install' is triggered.
 self.addEventListener('install', function(event) {
-  if (doCache) {
+  console.log("installing")
+  // if (doCache) {
     event.waitUntil(
       caches.open(CACHE_NAME)
         .then(function(cache) {
               cache.addAll(urlsToCache)
         })
     );
-  }
+  // }
 });
 
 // When the webpage goes to fetch files, we intercept that request and serve up the matching files
 // if we have them
 self.addEventListener('fetch', function(event) {
-  if (doCache) {
+  // if (doCache) {
       event.respondWith(
           caches.match(event.request).then(function(response) {
               return response || fetch(event.request);
           })
       );
-    }
+    // }
 });
 
 
