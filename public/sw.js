@@ -1,4 +1,4 @@
-
+CACHE_NAME = "mappa-v1"
 
 
 //This is caching the static map on the first load, Called "Cache then network" recipe
