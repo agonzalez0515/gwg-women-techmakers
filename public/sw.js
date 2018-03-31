@@ -1,7 +1,7 @@
 // Set this to true for production
 const doCache = false;
 
-const CACHE_NAME = 'maapa-cache-v6';
+const CACHE_NAME = 'maapa-cache-v7';
 
 const urlsToCache =[
   '/',
