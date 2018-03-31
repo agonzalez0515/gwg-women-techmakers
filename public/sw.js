@@ -1,8 +1,8 @@
-CACHE_NAME = "mappa-v2"
+CACHE_NAME = "mappa-v3"
 
 const urlsToCache =[
   '/',
-  '/static/js/main.e3f515ae.js',
+  '/static/js/main.4663e631.js',
   '/static/css/main.c67ba17a.css',
   '/index.html'
 ];
