@@ -9,3 +9,6 @@ Please read the [contribution guidelines](https://github.com/gwg-women/gwg-women
 
 ## Pending
 - Whether we use geolocation or use the search box instead
+
+## New Section
+Instructions to run locally
